@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d0798c62-bf24-49c9-a7ee-6fe52d403f7c/deploy-status)](https://app.netlify.com/sites/ott-fan-club/deploys)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
