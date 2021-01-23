@@ -1,4 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d0798c62-bf24-49c9-a7ee-6fe52d403f7c/deploy-status)](https://app.netlify.com/sites/ott-fan-club/deploys)
+[![Ott Fanclub](https://img.shields.io/badge/website-ott--fan.club-brightgreen)](http://www.ott-fan.club/)
+
+# Repository for the Website [ott-fan.club](http://www.ott-fan.club/)
 
 # Getting Started with Create React App
 
