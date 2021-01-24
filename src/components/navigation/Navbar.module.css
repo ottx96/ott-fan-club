@@ -2,7 +2,7 @@
     background-color: var(--persian-green);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     border-bottom: 1px solid;
     border-color: black;
     min-width: 100%;
@@ -28,23 +28,6 @@
     text-decoration: none;
     transition: all .4s ease 0s;
     color: white;
-}
-
-.create {
-    margin-right: 20px;
-    border-radius: 25px;
-    border-style: none;
-    background-color: var(--burnt-sienna);
-    color: white;
-    padding: 15px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    cursor: pointer;
-    transition: all .4s ease 0s;
-}
-
-.create:hover {
-    opacity: .75;
 }
 
 .nav ul li a:hover {

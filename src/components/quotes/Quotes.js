@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import {useHistory} from 'react-router-dom'
 import styles from './Quotes.module.css'
 import Quote from './quote/Quote'
 
@@ -32,11 +33,20 @@ export default function Quotes() {
         return sites
     }
 
+    let history = useHistory()
+
+    const pushQuotes = e => {
+        history.push('/submit/quote') 
+    }
+
     return (
         <div className={styles.quotes}>
             <div className={styles.circle_1}></div>
             <div className={styles.circle_2}></div>
             <div className={styles.circle_3}></div>
+            <button className={styles.add} onClick={pushQuotes}>
+                +
+            </button>
             {quotes.map(q => (
                 <Quote publisher={q.data.name} quote={q.data.quote} />
             ))}
