@@ -1,0 +1,20 @@
+.welcome {
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    animation: textanimation 4s ease 0s infinite alternate;
+}
+
+@keyframes textanimation {
+    from {
+        filter: opacity(1);
+    }
+    to {
+        color: darkred;
+    }
+}
