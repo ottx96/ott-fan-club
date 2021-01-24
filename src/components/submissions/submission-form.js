@@ -37,7 +37,7 @@ export default function SubmissionForm() {
                     <label>Your Email: <input type="email" name="email" value={email} placeholder='(Optional)' onChange={e => {setMail(e.target.value)}} /></label>
                 </p>
                 <p>
-                    <label>Message: <textarea name="message" value={quote} placeholder='"Der Boi ist schon nice."' onChange={e => {setQuote(e.target.value)}}></textarea></label>
+                    <label>Message: <textarea name="quote" value={quote} placeholder='"Der Boi ist schon nice."' onChange={e => {setQuote(e.target.value)}}></textarea></label>
                 </p>
                 <button type="submit">Senden</button>
             </form>
