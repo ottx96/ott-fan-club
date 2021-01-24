@@ -1,6 +1,6 @@
 .quotes {
     min-height: 95vh;
-    /* background: linear-gradient(16deg, rgba(231, 111, 81, 1) 0%, rgba(233, 196, 106, 1) 35%, rgba(244, 162, 97, 1) 100%); */
+    /* background: linear-gradient(16deg, rgba(231, 111, 81, .12) 0%, rgba(233, 196, 106, .12) 35%, rgba(244, 162, 97, .12) 100%); */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
     justify-items: auto;
