@@ -5,12 +5,18 @@ export default function SubmissionForm() {
 
 
     return (
-        <div className="container">
-            <form className="submission" netlify>
-                <div className="inputs">
-                    <input name="quote" type="text" placeholder='"Der Boi ist schon echt nice."'/>
-                </div>
-                <button type="submit" className="submit">Abschicken</button>
+        <div className="submission">
+            <form name="contact" className="form" netlify>
+                <p>
+                    <label>Your Name: <input type="text" name="name" placeholder='(Optional)' /></label>
+                </p>
+                <p>
+                    <label>Your Email: <input type="email" name="email" placeholder='(Optional)' /></label>
+                </p>
+                <p>
+                    <label>Message: <textarea name="message" placeholder='"Der Boi ist schon nice."'></textarea></label>
+                </p>
+                <button type="submit">Senden</button>
             </form>
         </div>
     )
