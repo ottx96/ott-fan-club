@@ -7,7 +7,6 @@
 
 .nav img {
     margin: 5px;
-    /* margin-right: auto; */
 }
 
 .nav ul {
@@ -25,6 +24,7 @@
 .nav ul li a {
     text-decoration: none;
     transition: all .4s ease 0s;
+    color: black;
 }
 
 .create {
