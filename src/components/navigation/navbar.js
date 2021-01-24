@@ -6,7 +6,7 @@ export default function Navbar() {
     let history = useHistory()
 
     const pushQuotes = e => {
-        history.push('/submit/quote')
+        history.push('/submit/quote') 
     }
 
     return (
