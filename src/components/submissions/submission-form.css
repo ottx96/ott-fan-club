@@ -38,8 +38,8 @@
     color: white
 }
 
-.submission .inputs .quote {
-    font-size: 1.25rem;
+.submission .inputs input {
+    font-size: 1.5rem;
     color: black;
     min-width: 80%;
     min-height: 10vh;

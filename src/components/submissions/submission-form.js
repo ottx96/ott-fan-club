@@ -8,9 +8,9 @@ export default function SubmissionForm() {
         <div className="container">
             <form className="submission" netlify>
                 <div className="inputs">
-                    <textarea placeholder='"Der Boi ist schon echt nice."' name="quote" id="" cols="30" rows="10" className="quote"></textarea>
+                    <input name="quote" type="text" placeholder='"Der Boi ist schon echt nice."'/>
                 </div>
-                <button className="submit">Abschicken</button>
+                <button type="submit" className="submit">Abschicken</button>
             </form>
         </div>
     )
