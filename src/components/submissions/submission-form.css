@@ -1,48 +1,55 @@
-.container {
-    background-color: #2b2b2b;
-}
-
-.submission {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 95vh;
-    flex-direction: column;
-}
-
-.submission .inputs {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.submission button {
-    margin-left: auto;
-    margin-right: 10%;
-    margin-top: 10px;
-    border-radius: 15px;
-    padding: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    border-style: none;
-    background-color: white;
-    color: black;
-    transition: all .4s ease 0s;
-    cursor: pointer;
-}
-
-.submission button:hover {
-    background-color: blue;
-    color: white
-}
-
-.submission .inputs input {
-    font-size: 1.5rem;
-    color: black;
-    min-width: 80%;
-    min-height: 10vh;
-    height: 20vh;
-    text-align: center;
-}
+    .submission {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 95vh;
+        width: 100%;
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .form p {
+        margin-top: 1.5vh;
+    }
+    
+    .form button {
+        width: 30%;
+        margin-left: auto;
+        margin-top: 10px;
+        border-radius: 15px;
+        padding: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        border-style: none;
+        background-color: black;
+        color: white;
+        transition: all .4s ease 0s;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: blue;
+        color: white
+    }
+    
+    .form input {
+        font-size: 1.5rem;
+        color: black;
+        min-width: 80%;
+        text-align: left;
+        width: 100%;
+    }
+    
+    .form textarea {
+        font-size: 1.5rem;
+        color: black;
+        min-width: 100%;
+        min-height: 10vh;
+        height: 20vh;
+        text-align: center;
+    }
