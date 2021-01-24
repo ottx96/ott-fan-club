@@ -1,7 +1,9 @@
 .welcome {
+    width: 100%;
     min-height: 95vh;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 h1 {
