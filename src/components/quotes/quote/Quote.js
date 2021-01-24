@@ -10,7 +10,7 @@ export default function Quote( {publisher, quote} ) {
                 {quote}
             </h1>
             <h3 className={styles.publisher}>
-                {publisher}
+                - {publisher === "" && "Unbekannt"}{publisher}
             </h3>
         </div>
     )
