@@ -11,10 +11,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-width: 50%;
 }
 
 .form p {
     margin-top: 1.5vh;
+    font-size: 1.25rem;
+    color: var(--charcoal)
 }
 
 .form button {
@@ -26,21 +29,20 @@
     padding-top: 5px;
     padding-bottom: 5px;
     border-style: none;
-    background-color: black;
+    background-color: var(--persian-green);
     color: white;
     transition: all .4s ease 0s;
     cursor: pointer;
     font-size: 1rem;
 }
 
-button:hover {
-    background-color: blue;
+.form button:hover {
+    background-color: var(--sandy-brown);
     color: white
 }
 
 .form input {
     font-size: 1.5rem;
-    color: black;
     min-width: 80%;
     text-align: left;
     width: 100%;
@@ -48,14 +50,13 @@ button:hover {
 
 .form textarea {
     font-size: 1.5rem;
-    color: black;
     min-width: 100%;
     min-height: 10vh;
-    height: 20vh;
+    height: 30vh;
     text-align: center;
 }
 
 .success {
-    color: green;
+    color: var(--persian-green);
     font-size: 2.5rem;
 }

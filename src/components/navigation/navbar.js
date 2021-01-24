@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import './navbar.css'
+import styles from './navbar.module.css'
 
 export default function Navbar() {
     let history = useHistory()
@@ -10,14 +10,14 @@ export default function Navbar() {
     }
 
     return (
-        <nav className="nav">
+        <nav className={styles.nav}>
             <ul>
                 <li><Link to="/">Startseite</Link></li>
                 <li><Link to="/quotes">Zitate</Link></li>
                 <li><Link to="/ratings">Rezensionen</Link></li>
                 <li><Link to="/about">Über den Boi</Link></li>
             </ul>
-            <button className="create" onClick={pushQuotes}>Zitat erfassen</button>
+            <button className={styles.create} onClick={pushQuotes}>Zitat erfassen</button>
         </nav>
     )
 }

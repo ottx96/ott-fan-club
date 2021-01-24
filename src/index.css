@@ -1,3 +1,11 @@
+:root {
+    --charcoal: #264653;
+    --persian-green: #2A9D8F;
+    --orange-yellow-crayola: #E9C46A;
+    --sandy-brown: #F4A261;
+    --burnt-sienna: #E76F51;
+}
+
 * {
     padding: 0px;
     margin: 0px;
