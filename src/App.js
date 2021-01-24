@@ -1,6 +1,7 @@
-import Navbar from './components/navigation/navbar';
-import Welcome from './components/welcome/welcome'
-import SubmissionForm from './components/submissions/submission-form'
+import Navbar from './components/navigation/Navbar';
+import Welcome from './components/welcome/Welcome'
+import SubmissionForm from './components/submissions/SubmissionForm'
+import Quotes from './components/quotes/Quotes'
 
 import {
   BrowserRouter as Router,
@@ -15,12 +16,15 @@ function App() {
       <Navbar />
 
       <Switch>
-        <Route path="/quotes">
+        <Route exact="true" path="/quotes">
+          <Quotes />
+        </Route>
+        <Route path="/submit/quote">
           <SubmissionForm />
         </Route>
-        <Route path="/">
-          <Welcome />
-        </Route>
+        
+        {/* default: Welcome */}
+        <Welcome />
       </Switch>
     </Router>
 

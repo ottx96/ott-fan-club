@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import styles from './navbar.module.css'
+import styles from './Navbar.module.css'
 
 export default function Navbar() {
     let history = useHistory()
 
     const pushQuotes = e => {
-        history.push('/quotes')
+        history.push('/submit/quote')
     }
 
     return (
