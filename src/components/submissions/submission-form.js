@@ -6,7 +6,7 @@ export default function SubmissionForm() {
 
     return (
         <div className="submission">
-            <form name="contact" method="POST" data-netlify="true" className="form">
+            <form name="contact" className="form" netlify>
                 <p>
                     <label>Your Name: <input type="text" name="name" placeholder='(Optional)' /></label>
                 </p>
@@ -16,7 +16,7 @@ export default function SubmissionForm() {
                 <p>
                     <label>Message: <textarea name="message" placeholder='"Der Boi ist schon nice."'></textarea></label>
                 </p>
-                <button type="submit">Send</button>
+                <button type="submit">Senden</button>
             </form>
         </div>
     )
