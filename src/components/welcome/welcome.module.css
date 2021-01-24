@@ -6,7 +6,7 @@
     justify-content: space-evenly;
 }
 
-h1 {
+.greeting {
     font-size: 5rem;
     text-align: center;
     animation: textanimation 4s ease 0s infinite alternate;

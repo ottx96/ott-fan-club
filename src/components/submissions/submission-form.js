@@ -1,11 +1,15 @@
 import React, { useState } from 'react'
-import './submission-form.css'
+import { useHistory } from 'react-router-dom'
+import styles from './submission-form.module.css'
 
 export default function SubmissionForm() {
+
+    let history = useHistory()
 
     const [name, setName] = useState("")
     const [email, setMail] = useState("")
     const [quote, setQuote] = useState("")
+    const [success, setSuccess] = useState(false)
 
     const encode = (data) => {
         return Object.keys(data)
@@ -23,24 +27,32 @@ export default function SubmissionForm() {
                 "email": email,
                 "quote": quote
             })
-        }).then(() => alert("Erfolgreich eingereicht!")).catch(error => alert(error));
+        }).catch(error => alert(error));
         e.preventDefault();
+
+        setName(""); setMail(""); setQuote("");
+        setSuccess(true)
     }
 
     return (
-        <div className="submission">
-            <form onSubmit={handleSubmit} name="contact" className="form" netlify>
+        <div className={styles.submission}>
+            {!success && <form onSubmit={handleSubmit} name="contact" className={styles.form} netlify>
                 <p>
-                    <label>Your Name: <input type="text" name="name" value={name} placeholder='(Optional)' onChange={e => {setName(e.target.value)}} /></label>
+                    <label>Name: <input type="text" name="name" value={name} placeholder='(Optional)' onChange={e => { setName(e.target.value) }} /></label>
                 </p>
                 <p>
-                    <label>Your Email: <input type="email" name="email" value={email} placeholder='(Optional)' onChange={e => {setMail(e.target.value)}} /></label>
+                    <label>E-Mail: <input type="email" name="email" value={email} placeholder='(Optional)' onChange={e => { setMail(e.target.value) }} /></label>
                 </p>
                 <p>
-                    <label>Message: <textarea name="quote" value={quote} placeholder='"Der Boi ist schon nice."' onChange={e => {setQuote(e.target.value)}}></textarea></label>
+                    <label>Zitat: <textarea name="quote" value={quote} placeholder='"Der Boi ist schon nice."' onChange={e => { setQuote(e.target.value) }}></textarea></label>
                 </p>
                 <button type="submit">Senden</button>
-            </form>
+            </form>}
+
+            {success &&
+                <div className={styles.success}>
+                    <h1 className={styles.success}>✔ Das hat geklappt.</h1>
+                </div>}
         </div>
     )
 }
