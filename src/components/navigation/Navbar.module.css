@@ -29,6 +29,9 @@
 
 @media screen and (min-width: 648px) {
     .nav ul {
+        justify-content: left;
+    }
+    .nav ul {
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -37,7 +40,8 @@
         margin-bottom: 5px;
     }
     .nav ul li a {
-        font-size: 1.5rem;
+        margin: 25px;
+        font-size: 1rem;
     }
 }
 
@@ -51,6 +55,6 @@
         margin-bottom: 4px;
     }
     .nav ul li a {
-        font-size: 1rem;
+        font-size: 0.75rem;
     }
 }
