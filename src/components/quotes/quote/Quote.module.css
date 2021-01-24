@@ -38,7 +38,7 @@
     color: rgba(0, 0, 0, .76)
 }
 
-@media screen and (min-width: 733px) {
+@media screen and (min-width: 648px) {
     .quote .text h1 {
         font-size: 2.5rem;
     }
@@ -47,11 +47,14 @@
     }
 }
 
-@media screen and (max-width: 733px) {
+@media screen and (max-width: 648px) {
     .quote .text h1 {
         font-size: 1.5rem;
     }
     .quote .publisher {
         font-size: 1.0rem;
+    }
+    .quote .text {
+        border: none
     }
 }
