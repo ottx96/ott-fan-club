@@ -7,6 +7,7 @@
 }
 
 .circle_1 {
+    z-index: 5;
     position: absolute;
     top: 80vh;
     left: 3%;
@@ -18,6 +19,7 @@
 }
 
 .circle_2 {
+    z-index: 5;
     position: absolute;
     overflow: hidden;
     top: 20vh;
@@ -30,6 +32,7 @@
 }
 
 .circle_3 {
+    z-index: 5;
     position: absolute;
     overflow: hidden;
     top: 20vh;

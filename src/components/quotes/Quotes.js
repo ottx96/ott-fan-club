@@ -34,9 +34,7 @@ export default function Quotes() {
 
     return (
         <div className={styles.quotes}>
-            {[...Array(50)].map((i, k) =>
-                <div className={styles.circle_1}></div>
-            )}
+            <div className={styles.circle_1}></div>
             <div className={styles.circle_2}></div>
             <div className={styles.circle_3}></div>
             {quotes.map(q => (
