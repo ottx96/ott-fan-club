@@ -21,16 +21,15 @@ export default function Quotes() {
     useEffect(() => {
         fetchSubmissions().then(data => {
             setQuotes(data)
-            console.log(data)
         })
     }, [])
 
     async function fetchSubmissions() {
         const client = new NetlifyAPI('npBCRPCE6SDwLqTh_ijnAw_byN7UnSX4nINPHeM5tN4')
-        const sites = await client.listFormSubmissions({
+        const submissions = await client.listFormSubmissions({
             form_id: FORM_ID
         })
-        return sites
+        return submissions
     }
 
     let history = useHistory()
@@ -48,7 +47,7 @@ export default function Quotes() {
                 +
             </button>
             {quotes.map(q => (
-                <Quote publisher={q.data.name} quote={q.data.quote} />
+                <Quote publisher={q.name} quote={q.data.quote} />
             ))}
         </div>
     )

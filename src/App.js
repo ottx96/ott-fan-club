@@ -1,7 +1,9 @@
 import Navbar from './components/navigation/Navbar';
 import Welcome from './components/welcome/Welcome'
-import SubmissionForm from './components/submissions/SubmissionForm'
+import QuoteSubmissionForm from './components/submissions/quote/QuoteSubmissionForm'
+import MemeSubmissionForm from './components/submissions/meme/MemeSubmissionForm'
 import Quotes from './components/quotes/Quotes'
+import Memes from './components/memes/Memes'
 
 import {
   BrowserRouter as Router,
@@ -16,11 +18,17 @@ function App() {
       <Navbar />
 
       <Switch>
-        <Route exact="true" path="/quotes">
+      <Route exact={true} path="/quotes">
           <Quotes />
         </Route>
+        <Route exact={true} path="/memes">
+          <Memes />
+        </Route>
         <Route path="/submit/quote">
-          <SubmissionForm />
+          <QuoteSubmissionForm />
+        </Route>
+        <Route path="/submit/meme">
+          <MemeSubmissionForm />
         </Route>
         
         {/* default: Welcome */}

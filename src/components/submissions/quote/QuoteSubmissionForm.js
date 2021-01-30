@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import styles from './SubmissionForm.module.css'
+import styles from './QuoteSubmissionForm.module.css'
 
-export default function SubmissionForm() {
+export default function QuoteSubmissionForm() {
 
     let history = useHistory()
 
