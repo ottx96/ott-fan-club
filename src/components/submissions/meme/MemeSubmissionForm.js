@@ -3,19 +3,12 @@ import { useHistory } from 'react-router-dom'
 import styles from './MemeSubmissionForm.module.css'
 import ImageUploader from 'react-images-upload';
 
-
 function encode(data) {
     const formData = new FormData();
     for (const key of Object.keys(data)) 
         formData.append(key, data[key]);    
     return formData;
 }
-
-// const encode = (data) => {
-//     return Object.keys(data)
-//         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-//         .join("&");
-// }
 
 export default function SubmissionForm() {
 
@@ -60,5 +53,4 @@ export default function SubmissionForm() {
                 </div>}
         </div>
     )
-
 }
