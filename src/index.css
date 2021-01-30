@@ -16,4 +16,6 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-body {}
+body {
+    overflow-x: hidden;
+}
