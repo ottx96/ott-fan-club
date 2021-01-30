@@ -1,7 +1,3 @@
-body {
-    overflow-x: hidden;
-}
-
 .quote {
     margin: 10px;
     display: grid;
@@ -15,6 +11,7 @@ body {
     -webkit-backdrop-filter: blur( 5px);
     border-radius: 10px;
     min-height: 20vh;
+    overflow: hidden;
 }
 
 .quote .text {
@@ -30,6 +27,7 @@ body {
     text-align: left;
     margin: 10px;
     margin-left: 15px;
+    color: rgba(0, 0, 0, .76);
 }
 
 .quote .text p {
@@ -40,7 +38,7 @@ body {
     margin: 15px;
     margin-left: auto;
     margin-right: 20px;
-    color: rgba(0, 0, 0, .76)
+    color: rgba(0, 0, 0, .76);
 }
 
 @media screen and (min-width: 648px) {
@@ -60,6 +58,8 @@ body {
         font-size: 1.0rem;
     }
     .quote .text {
-        border: none
+        /* border: none; */
+        border: 1px solid rgba(255, 255, 255, .1);
+        border-image: radial-gradient( rgba(0, 0, 0, .20), transparent) 1 100%;
     }
 }
