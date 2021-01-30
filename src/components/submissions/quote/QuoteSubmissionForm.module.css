@@ -3,21 +3,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 95vh;
+    background-color: var(--charcoal);
+    height: 97vh;
     width: 100%;
 }
 
 .form {
+    padding: 1.5%;
+    background-color: white;
+    box-shadow: 10px 10px 100px 10px rgba(0, 0, 0, .55);
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 50%;
+    min-width: 45%;
+    width: 95%;
 }
 
 .form p {
     margin-top: 1.5vh;
     font-size: 1.25rem;
-    color: var(--charcoal)
 }
 
 .form button {
@@ -44,16 +49,22 @@
 .form input {
     font-size: 1.5rem;
     min-width: 80%;
-    text-align: left;
+    text-align: center;
     width: 100%;
+    border: 1px solid black;
 }
 
 .form textarea {
     font-size: 1.5rem;
-    min-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 80%;
+    width: 100%;
+    max-width: 100%;
     min-height: 10vh;
     height: 30vh;
     text-align: center;
+    border: 1px solid black;
 }
 
 .success {
@@ -70,5 +81,11 @@
 @media screen and (max-width: 648px) {
     .form * {
         font-size: 1rem;
+    }
+    .form input {
+        font-size: 1.1rem;
+    }
+    .form textarea {
+        font-size: 1.1rem;
     }
 }
