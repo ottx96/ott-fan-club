@@ -3,21 +3,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 95vh;
+    background-color: var(--charcoal);
+    height: 97vh;
     width: 100%;
 }
 
 .form {
+    padding: 1.5%;
+    background-color: white;
+    box-shadow: 10px 10px 100px 10px rgba(0, 0, 0, .55);
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 50%;
+    min-width: 45%;
+    width: 95%;
 }
 
 .form p {
     margin-top: 1.5vh;
     font-size: 1.25rem;
-    color: var(--charcoal)
 }
 
 .form button {
