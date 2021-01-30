@@ -12,11 +12,15 @@ function encode(data) {
 
 export default function SubmissionForm() {
 
+    const [meta, setMeta] = useState({})
     const [image, setImage] = useState({})
     const [success, setSuccess] = useState(false)
 
-    const onDrop = (picture, dataURLs) => {
-        setImage(dataURLs[0])
+    const onDrop = (meta, content) => {
+        console.log(meta)
+        console.log(content)
+        setMeta(meta[0])
+        setImage(content[0])
     }
 
     const handleSubmit = e => {
@@ -25,9 +29,14 @@ export default function SubmissionForm() {
             method: "POST",
             body: encode({
                 "form-name": "memes",
-                image: image
+                ...meta,
+                ...image
             })
-        }).then(() => setSuccess(true))
+        }).then(resp => {
+            if(!resp.ok) throw new Error('Meme konnte nicht eingereicht werden!')
+            return resp.blob
+        }).then(() => {setSuccess(true)})
+        .catch(e => {alert(e)})
     }
 
     const handleChange = e => {
@@ -40,8 +49,7 @@ export default function SubmissionForm() {
 
     return (
         <div className={styles.submission}>
-
-            <form
+            {/* <form
                 name="file-upload"
                 method="post"
                 action="/thanks/"
@@ -49,7 +57,6 @@ export default function SubmissionForm() {
                 data-netlify-honeypot="bot-field"
                 onSubmit={handleSubmit}
             >
-                {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                 <input type="hidden" name="form-name" value="file-upload" />
                 <p hidden>
                     <label>
@@ -76,8 +83,8 @@ export default function SubmissionForm() {
                 <p>
                     <button type="submit">Send</button>
                 </p>
-            </form>
-            {/* 
+            </form> */}
+
             {!success && <form onSubmit={handleSubmit} name="memes" className={styles.form} netlify>
                 <ImageUploader
                     withIcon={true}
@@ -94,9 +101,10 @@ export default function SubmissionForm() {
             </form>}
 
             {success &&
+                <img src={image} alt="" /> &&
                 <div className={styles.success}>
                     <h1 className={styles.successlabel}>✔ Das hat geklappt.</h1>
-                </div>} */}
+                </div>}
         </div>
     )
 }
