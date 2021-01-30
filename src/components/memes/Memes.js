@@ -31,6 +31,9 @@ export default function Memes() {
 
     return (
         <div className={styles.memes}>
+            {/* {memes.map(m => 
+                <img src={m.data.image.url} alt=""/>
+            )} */}
             <p className={styles.header}>Hier gibt's noch nichts zu sehen!<br />Es dürfen aber schon Memes hochgeladen werden. 😉</p>
             <button className={styles.add} onClick={submitMeme}>Meme hochladen</button>
         </div>
