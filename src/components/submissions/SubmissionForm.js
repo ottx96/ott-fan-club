@@ -35,7 +35,7 @@ export default function SubmissionForm() {
 
     return (
         <div className={styles.submission}>
-            {!success && <form onSubmit={handleSubmit} name="contact" className={styles.form} netlify>
+            {!success && <form onSubmit={handleSubmit} name="quotes" className={styles.form} netlify>
                 <p>
                     <label>Name: <input type="text" name="name" value={name} placeholder='(Optional)' onChange={e => { setName(e.target.value) }} /></label>
                 </p>
