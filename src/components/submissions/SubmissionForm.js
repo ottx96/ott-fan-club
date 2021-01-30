@@ -7,7 +7,6 @@ export default function SubmissionForm() {
     let history = useHistory()
 
     const [name, setName] = useState("")
-    const [email, setMail] = useState("")
     const [quote, setQuote] = useState("")
     const [success, setSuccess] = useState(false)
 
@@ -24,13 +23,13 @@ export default function SubmissionForm() {
             body: encode({
                 "form-name": "contact",
                 "name": name,
-                "email": email,
                 "quote": quote
             })
         }).catch(error => alert(error));
         e.preventDefault();
 
-        setName(""); setMail(""); setQuote("");
+        setName("");
+        setQuote("");
         setSuccess(true)
     }
 
@@ -39,9 +38,6 @@ export default function SubmissionForm() {
             {!success && <form onSubmit={handleSubmit} name="contact" className={styles.form} netlify>
                 <p>
                     <label>Name: <input type="text" name="name" value={name} placeholder='(Optional)' onChange={e => { setName(e.target.value) }} /></label>
-                </p>
-                <p>
-                    <label>E-Mail: <input type="email" name="email" value={email} placeholder='(Optional)' onChange={e => { setMail(e.target.value) }} /></label>
                 </p>
                 <p>
                     <label>Zitat: <textarea name="quote" value={quote} placeholder='"Der Boi ist schon nice."' onChange={e => { setQuote(e.target.value) }}></textarea></label>
