@@ -25,11 +25,13 @@ export default function SubmissionForm() {
 
     const handleSubmit = e => {
         e.preventDefault()
+        console.log(meta)
+        console.log(image)
         fetch("/", {
             method: "POST",
             body: encode({
                 "form-name": "memes",
-                "image": image,
+                "image": meta,
                 "name": meta.name,
                 "lastModified": meta.lastModified
             })
