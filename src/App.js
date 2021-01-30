@@ -18,10 +18,10 @@ function App() {
       <Navbar />
 
       <Switch>
-      <Route exact="true" path="/quotes">
+      <Route exact={true} path="/quotes">
           <Quotes />
         </Route>
-        <Route exact="true" path="/memes">
+        <Route exact={true} path="/memes">
           <Memes />
         </Route>
         <Route path="/submit/quote">
