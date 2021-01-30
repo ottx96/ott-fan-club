@@ -49,16 +49,21 @@
 .form input {
     font-size: 1.5rem;
     min-width: 80%;
-    text-align: left;
+    text-align: center;
     width: 100%;
+    border: 1px solid black;
 }
 
 .form textarea {
     font-size: 1.5rem;
-    min-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 100%;
     min-height: 10vh;
     height: 30vh;
     text-align: center;
+    border: 1px solid black;
 }
 
 .success {
@@ -75,5 +80,11 @@
 @media screen and (max-width: 648px) {
     .form * {
         font-size: 1rem;
+    }
+    .form input {
+        font-size: 1.1rem;
+    }
+    .form textarea {
+        font-size: 1.1rem;
     }
 }
