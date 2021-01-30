@@ -4,18 +4,18 @@ import styles from './MemeSubmissionForm.module.css'
 import ImageUploader from 'react-images-upload';
 
 
-function encode(data) {
-    const formData = new FormData();
-    for (const key of Object.keys(data)) 
-        formData.append(key, data[key]);    
-    return formData;
-}
-
-// const encode = (data) => {
-//     return Object.keys(data)
-//         .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-//         .join("&");
+// function encode(data) {
+//     const formData = new FormData();
+//     for (const key of Object.keys(data)) 
+//         formData.append(key, data[key]);    
+//     return formData;
 // }
+
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+}
 
 export default function SubmissionForm() {
 

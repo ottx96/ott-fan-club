@@ -27,9 +27,13 @@ export default function Quotes() {
 
     async function fetchSubmissions() {
         const client = new NetlifyAPI('npBCRPCE6SDwLqTh_ijnAw_byN7UnSX4nINPHeM5tN4')
+        // TODO: Einkommentieren!
         const sites = await client.listFormSubmissions({
-            form_id: FORM_ID
+            form_id: "60159960e83a710007f0df6b"
         })
+        // const sites = await client.listFormSubmissions({
+        //     form_id: FORM_ID
+        // })
         return sites
     }
 
@@ -41,7 +45,7 @@ export default function Quotes() {
 
     return (
         <div className={styles.quotes}>
-            <div className={styles.circle_1}></div>
+            {/* <div className={styles.circle_1}></div>
             <div className={styles.circle_2}></div>
             <div className={styles.circle_3}></div>
             <button className={styles.add} onClick={pushQuotes}>
@@ -49,7 +53,7 @@ export default function Quotes() {
             </button>
             {quotes.map(q => (
                 <Quote publisher={q.data.name} quote={q.data.quote} />
-            ))}
+            ))} */}
         </div>
     )
 }
