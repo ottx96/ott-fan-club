@@ -29,8 +29,9 @@ export default function SubmissionForm() {
             method: "POST",
             body: encode({
                 "form-name": "memes",
-                ...meta,
-                ...image
+                "image": image,
+                "name": meta.name,
+                "lastModified": meta.lastModified
             })
         }).then(resp => {
             if(!resp.ok) throw new Error('Meme konnte nicht eingereicht werden!')
@@ -39,52 +40,8 @@ export default function SubmissionForm() {
         .catch(e => {alert(e)})
     }
 
-    const handleChange = e => {
-        this.setState({ [e.target.name]: e.target.value });
-    };
-
-    const handleAttachment = e => {
-        setImage(e.target.files[0])
-    };
-
     return (
         <div className={styles.submission}>
-            {/* <form
-                name="file-upload"
-                method="post"
-                action="/thanks/"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                onSubmit={handleSubmit}
-            >
-                <input type="hidden" name="form-name" value="file-upload" />
-                <p hidden>
-                    <label>
-                        Don’t fill this out:{" "}
-                        <input name="bot-field" onChange={handleChange} />
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        Your name:<br />
-                        <input type="text" name="name" onChange={handleChange} />
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        File:<br />
-                        <input
-                            type="file"
-                            name="attachment"
-                            onChange={handleAttachment}
-                        />
-                    </label>
-                </p>
-                <p>
-                    <button type="submit">Send</button>
-                </p>
-            </form> */}
-
             {!success && <form onSubmit={handleSubmit} name="memes" className={styles.form} netlify>
                 <ImageUploader
                     withIcon={true}
