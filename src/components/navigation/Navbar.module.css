@@ -9,6 +9,7 @@
     min-width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    margin-bottom: .75vh;
 }
 
 .nav ul {
