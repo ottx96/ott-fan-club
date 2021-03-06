@@ -12,7 +12,7 @@ export default function Navbar() {
                 <div className={styles.separator}><p /></div>
                 <li><Link to="/memes">Memes</Link></li>
                 <div className={styles.separator}><p /></div>
-                <li><Link to="/about">über den Boi</Link></li>
+                <li><Link to="/about">über den Boiiiiiiiiiiiiiiiiwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww</Link></li>
             </ul>
         </nav>
     )
