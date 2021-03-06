@@ -9,13 +9,12 @@
     min-width: 100%;
     max-width: 100%;
     overflow-x: hidden;
-    margin-bottom: .75vh;
 }
 
 .nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-between; */
     align-items: center;
     width: 100%;
 }
@@ -37,11 +36,15 @@
 }
 
 .separator {
-    font-weight: 300;
-    color: var(--charcoal);
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.separator p {
     border-left: 1px solid;
     border-image: radial-gradient(rgba(255, 255, 255, .65), transparent) 1 100%;
-    width: 1px;
+    height: 100%;
 }
 
 .nav ul li a:hover {
