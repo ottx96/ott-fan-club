@@ -73,10 +73,10 @@
 
 @media screen and (max-width: 648px) {
     .nav {
-        height: 3.66vh;
+        height: 5vh;
     }
     .separator {
-        height: 1.75vh;
+        height: 2.75vh;
     }
     .nav ul {
         margin-left: 10px;
@@ -88,6 +88,5 @@
     }
     .nav ul li a {
         font-size: 1rem;
-        letter-spacing: 1px;
     }
 }
