@@ -47,7 +47,7 @@ export default function Quotes() {
                 +
             </button>
             {quotes.map(q => (
-                <Quote publisher={q.name} quote={q.data.quote} />
+                <Quote key={q.data.quote} publisher={q.name} quote={q.data.quote} />
             ))}
         </div>
     )
