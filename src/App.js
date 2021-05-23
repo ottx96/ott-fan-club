@@ -15,24 +15,27 @@ import {
 function App() {
   return (
     <Router>
-      <Navbar />
-
       <Switch>
-      <Route exact={true} path="/quotes">
+        <Route exact={true} path="/quotes">
+          <Navbar active="/quotes" />
           <Quotes />
         </Route>
         <Route exact={true} path="/memes">
+          <Navbar active="/memes" />
           <Memes />
         </Route>
         <Route path="/submit/quote">
+          <Navbar active="/quotes" />
           <QuoteSubmissionForm />
         </Route>
         <Route path="/submit/meme">
+          <Navbar active="/memes" />
           <MemeSubmissionForm />
         </Route>
-        
-        {/* default: Welcome */}
-        <Welcome />
+        <Route exact={false} path="/">
+          <Navbar />
+          <Welcome />
+        </Route>
       </Switch>
     </Router>
 

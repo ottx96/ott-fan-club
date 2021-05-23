@@ -25,6 +25,10 @@
     font-size: 1.25rem;
 }
 
+.form p label {
+    width: 100%;
+}
+
 .form button {
     width: 30%;
     margin-left: auto;

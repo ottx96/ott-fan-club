@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from '../navigation/Navbar'
 import styles from './Welcome.module.css'
 
 export default function Welcome() {
