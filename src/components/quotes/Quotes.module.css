@@ -1,9 +1,11 @@
 .quotes {
     min-height: 95vh;
-    /* background: linear-gradient(16deg, rgba(231, 111, 81, .12) 0%, rgba(233, 196, 106, .12) 35%, rgba(244, 162, 97, .12) 100%); */
+    background: linear-gradient(16deg, rgba(231, 111, 81, .12) 0%, rgba(233, 196, 106, .12) 35%, rgba(244, 162, 97, .12) 100%);
     display: grid;
     justify-items: auto;
     padding-top: .5vh;
+    position: absolute;
+    z-index: 5;
 }
 
 @media screen and (min-width: 648px) {
@@ -17,6 +19,18 @@
     .quotes {
         grid-template-columns: repeat(auto-fit, 100%);
     }
+}
+
+.page {
+    display: block;
+    height: max-content;
+}
+
+.particles {
+    display: flex;
+    position: absolute;
+    min-height: max-content;
+    filter: blur(0.5);
 }
 
 .add {
@@ -37,43 +51,6 @@
 .add:hover {
     background: rgba(42, 157, 143, .78);
     color: rgba(255, 255, 255, .7)
-}
-
-.circle_1 {
-    z-index: -5;
-    position: absolute;
-    top: 60vw;
-    left: 3%;
-    width: 40vw;
-    height: 40vw;
-    border-radius: 50%;
-    background-color: var(--orange-yellow-crayola);
-}
-
-.circle_2 {
-    z-index: -5;
-    position: absolute;
-    overflow: hidden;
-    top: 120vw;
-    left: -20%;
-    width: 60vw;
-    height: 60vw;
-    border-radius: 50%;
-    background-color: var(--burnt-sienna);
-    box-shadow: 5px 5px 5px 5px white;
-}
-
-.circle_3 {
-    z-index: -5;
-    position: absolute;
-    overflow: hidden;
-    top: 190vw;
-    left: 25%;
-    width: 60vw;
-    height: 60vw;
-    border-radius: 50%;
-    background-color: var(--sandy-brown);
-    box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, .28);
 }
 
 @media screen and (max-width: 648px) {
