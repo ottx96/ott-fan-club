@@ -1,34 +1,28 @@
 import React from 'react'
-import { Link, useHistory } from 'react-router-dom'
 import Nav from 'react-bootstrap/Nav'
-import styles from './Navbar.module.css'
+import Navbar from 'react-bootstrap/Navbar'
+import NavDropdown from 'react-bootstrap/NavDropdown'
 
-export default function Navbar({ active }) {
+export default function NavigationBar() {
     return (
-        <Nav fill variant="tabs" defaultActiveKey="/" activeKey={active}>
-            <Nav.Item>
-                <Nav.Link href="/">Startseite</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link href="/quotes">Zitate</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link href="/memes">Memes</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link href="/about">Über den Boi</Nav.Link>
-            </Nav.Item>
-        </Nav>
-        // <nav className={styles.nav}>
-        //     <ul>
-        //         <li><Link to="/">Startseite</Link></li>
-        //         <div className={styles.separator}><p /></div>
-        //         <li><Link to="/quotes">Zitate</Link></li>
-        //         <div className={styles.separator}><p /></div>
-        //         <li><Link to="/memes">Memes</Link></li>
-        //         <div className={styles.separator}><p /></div>
-        //         <li><Link to="/about">über den Boi</Link></li>
-        //     </ul>
-        // </nav>
+        <Navbar active={2} collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar.Brand href="/">Ott-Fanclub</Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav className="mr-auto">
+                    <Nav.Link eventKey={1} href="#/">Startseite</Nav.Link>
+                    <Nav.Link eventKey={2} href="#quotes">Zitate</Nav.Link>
+                    <NavDropdown eventKey="/" title="Mehr" id="collasible-nav-dropdown">
+                        <NavDropdown.Item href="#calendar">Kalender</NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href="#">Coming Soon</NavDropdown.Item>
+                    </NavDropdown>
+                </Nav>
+                <Nav>
+                    <Nav.Link eventKey={1} href="#memes">Memes</Nav.Link>
+                    <Nav.Link eventKey={2} href="#about">About</Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar>
     )
 }
