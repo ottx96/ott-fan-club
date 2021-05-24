@@ -1,15 +1,17 @@
 import React from 'react'
-import Navbar from '../navigation/Navbar'
 import styles from './Welcome.module.css'
+import HollowKnightSection from './sections/hollowknight/HollowKnight'
+import { Container, Jumbotron, Row, Col } from 'react-bootstrap'
 
 export default function Welcome() {
-
     return (
-        <div className={styles.welcome}>
-            <h1 className={styles.greeting}>
-                This site is currently under construction!
-            </h1>
-        </div>
+        <Container className={styles.welcome}>
+            <Row classname={styles.section}>
+                <Col>
+                    <HollowKnightSection />
+                </Col>
+            </Row>
+        </Container>
     )
 
 }
