@@ -74,11 +74,11 @@ const particlesConfig =
                 "radius": 60
             },
             "grab": {
-                "distance": 200,
+                "distance": 75,
                 "links": {
                     "blink": true,
                     "consent": false,
-                    "opacity": 0.25
+                    "opacity": 0.5
                 }
             },
             "light": {
@@ -101,17 +101,17 @@ const particlesConfig =
                 }
             },
             "push": {
-                "quantity": 4
+                "quantity": 5
             },
             "remove": {
                 "quantity": 2
             },
             "repulse": {
-                "distance": 200,
+                "distance": 60,
                 "duration": 0.4,
-                "factor": 100,
+                "factor": 5,
                 "speed": 1,
-                "maxSpeed": 50,
+                "maxSpeed": 10,
                 "easing": "ease-out-quad"
             },
             "slow": {
