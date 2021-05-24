@@ -51,28 +51,51 @@ const ParticlesParams = {
                 "horizontal": {
                     "random": {
                         "enable": true,
-                        "minimumValue": 0.1
+                        "minimumValue": 0.5
                     },
                     "value": 1
                 },
                 "vertical": {
                     "random": {
                         "enable": true,
-                        "minimumValue": 0.1
+                        "minimumValue": 0.5
                     },
-                    "value": 1
+                    "value": 2
                 }
             },
             "enable": true,
             "mode": "bounce",
             "overlap": {
                 "enable": true,
-                "retries": 0
+                "retries": 5
             }
         },
         "color": {
             "value": "random",
-        },
+            "animation": {
+              "h": {
+                "count": 10,
+                "enable": true,
+                "offset": 0.1,
+                "speed": 0.25,
+                "sync": true
+              },
+              "s": {
+                "count": 10,
+                "enable": true,
+                "offset": 0.1,
+                "speed": 0.33,
+                "sync": true
+              },
+              "l": {
+                "count": 10,
+                "enable": true,
+                "offset": 0.1,
+                "speed": 0.5,
+                "sync": true
+              }
+            }
+          },
         "destroy": {
             "mode": "none",
             "split": {
