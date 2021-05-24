@@ -115,7 +115,7 @@ const ParticlesParams = {
             },
             "consent": false,
             "distance": 375,
-            "enable": true,
+            "enable": false,
             "frequency": .25,
             "opacity": 1,
             "triangles": {
@@ -166,7 +166,7 @@ const ParticlesParams = {
                 "factor": 2000
             },
             "limit": 50,
-            "value": 4
+            "value": 3
         },
         "opacity": {
             "random": {
@@ -196,7 +196,7 @@ const ParticlesParams = {
             },
             "value": {
                 "min": 1,
-                "max": 135
+                "max": 115
             },
             "animation": {
                 "count": 0,
