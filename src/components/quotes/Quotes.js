@@ -111,7 +111,7 @@ const ParticlesParams = {
             "blink": true,
             "color": {
                 // "value": "#E76F51"
-                "value": "#aaaaaa"
+                "value": "#bbbbbb"
             },
             "consent": false,
             "distance": 375,
@@ -161,12 +161,12 @@ const ParticlesParams = {
         },
         "number": {
             "density": {
-                "enable": true,
+                "enable": false,
                 "area": 1000,
                 "factor": 2000
             },
             "limit": 50,
-            "value": 7
+            "value": 4
         },
         "opacity": {
             "random": {
