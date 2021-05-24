@@ -72,29 +72,6 @@ const ParticlesParams = {
         },
         "color": {
             "value": "random",
-            "animation": {
-              "h": {
-                "count": 10,
-                "enable": true,
-                "offset": 0.1,
-                "speed": 0.25,
-                "sync": true
-              },
-              "s": {
-                "count": 10,
-                "enable": true,
-                "offset": 0.1,
-                "speed": 0.33,
-                "sync": true
-              },
-              "l": {
-                "count": 10,
-                "enable": true,
-                "offset": 0.1,
-                "speed": 0.5,
-                "sync": true
-              }
-            }
           },
         "destroy": {
             "mode": "none",
@@ -157,7 +134,7 @@ const ParticlesParams = {
                 "value": 90
             },
             "attract": {
-                "enable": true,
+                "enable": false,
                 "rotate": {
                     "x": 600,
                     "y": 1200
@@ -219,7 +196,7 @@ const ParticlesParams = {
             },
             "value": {
                 "min": 1,
-                "max": 115
+                "max": 95
             },
             "animation": {
                 "count": 0,
@@ -276,15 +253,13 @@ export default function Quotes() {
 
     return (
         <div className={styles.page}>
+            <Particles classname={styles.particles} width="100%" height="90vh" id="tsparticles" options={ParticlesParams} />
             <div className={styles.quotes}>
-                <button className={styles.add} onClick={pushQuotes}>
-                    +
-            </button>
+                <button className={styles.add} onClick={pushQuotes}>+</button>
                 {quotes.map(q => (
                     <Quote key={q.data.quote} publisher={q.name} quote={q.data.quote} />
                 ))}
             </div>
-            <Particles classname={styles.particles} width="100%" height="90vh" id="tsparticles" options={ParticlesParams} />
         </div>
     )
 }
