@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown'
 
 export default function NavigationBar() {
     return (
-        <Navbar active={2} collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar active={1} collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Navbar.Brand href="/">Ott-Fanclub</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">

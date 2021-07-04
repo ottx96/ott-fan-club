@@ -1,6 +1,6 @@
 import React from 'react'
 import Particles from 'react-tsparticles'
-import styles from './HollowKnight.module.css'
+import styles from './NyanCat.module.css'
 import { Row } from 'react-bootstrap'
 
 const particlesConfig =

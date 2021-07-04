@@ -1,17 +1,21 @@
 import React from 'react'
 import styles from './Welcome.module.css'
-import NyanCatSection from './sections/hollowknight/HollowKnight'
+import NyanCatSection from './sections/nyancat/NyanCat'
 import { Container, Jumbotron, Row, Col } from 'react-bootstrap'
 
 export default function Welcome() {
     return (
-        <Container className={styles.welcome}>
-            <Row classname={styles.section}>
-                <Col>
-                    <NyanCatSection />
-                </Col>
-            </Row>
-        </Container>
+        <div className={styles.container}>
+            <section className={styles.snap}></section>
+            <section className={styles.snap}></section>
+            <section className={styles.snap}></section>
+            <section className={styles.snap}></section>
+            <section className={styles.snap}></section>
+            <section className={styles.snap}></section>
+            <section className={styles.snap}></section>
+            <section className={styles.snap}></section>
+            <section className={styles.snap}></section>
+        </div>
     )
 
 }
