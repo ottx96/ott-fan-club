@@ -382,11 +382,11 @@ const particlesConfig =
         "size": {
             "random": {
                 "enable": true,
-                "minimumValue": 1
+                "minimumValue": 0.33
             },
             "value": {
                 "min": 1,
-                "max": 4
+                "max": 2.75
             },
             "animation": {
                 "count": 0,
