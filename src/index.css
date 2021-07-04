@@ -20,6 +20,6 @@ body {
     overflow-x: hidden;
 }
 
-html {
+/* html {
     scroll-snap-type: y mandatory;
-}
+} */
