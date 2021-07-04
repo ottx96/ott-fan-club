@@ -1,10 +1,17 @@
 .welcome {
     /* background-color: var(--charcoal); */
     width: 100%;
+    min-width: 100%;
     min-height: 95vh;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
+}
+
+.section {
+    min-width: 100%;
+    
+    background-color: aqua;
 }
 
 .greeting {
