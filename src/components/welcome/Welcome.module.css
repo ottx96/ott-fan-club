@@ -1,13 +1,17 @@
 .snap {
-    scroll-snap-type: proximity;
+    scroll-snap-type: mandatory;
     scroll-behavior: smooth;
     scroll-snap-align: end;
     min-height: 25vh;
+    max-height: 50vh;
     min-width: 100%;
+    background-color: var(--sandy-brown);
 }
 
-.snap:nth-child(odd) {
-    background-color: aqua;
+.snap:nth-child(even) {
+    background-color: var(--persian-green);
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 @media screen and (max-width: 648px) {

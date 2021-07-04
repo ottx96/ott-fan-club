@@ -6,14 +6,22 @@ import { Container, Jumbotron, Row, Col } from 'react-bootstrap'
 export default function Welcome() {
     return (
         <div className={styles.container}>
+            <section className={styles.snap}>
+                {/* <NyanCatSection /> */}
+            </section>
+            <section className={styles.snap}>
+            {/* <NyanCatSection /> */}
+            </section>
+            <section className={styles.snap}></section>
+            <section className={styles.snap}>
+            <NyanCatSection />
+            </section>
             <section className={styles.snap}></section>
             <section className={styles.snap}></section>
             <section className={styles.snap}></section>
-            <section className={styles.snap}></section>
-            <section className={styles.snap}></section>
-            <section className={styles.snap}></section>
-            <section className={styles.snap}></section>
-            <section className={styles.snap}></section>
+            <section className={styles.snap}>
+            <NyanCatSection />
+            </section>
             <section className={styles.snap}></section>
         </div>
     )

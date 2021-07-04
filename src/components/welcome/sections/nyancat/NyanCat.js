@@ -18,7 +18,7 @@ const particlesConfig =
     },
     "fullScreen": {
         "enable": false,
-        "zIndex": 1
+        "zIndex": 10
     },
     "detectRetina": true,
     "fpsLimit": 60,
@@ -331,17 +331,17 @@ const particlesConfig =
         },
         "opacity": {
             "random": {
-                "enable": false,
-                "minimumValue": 0.1
+                "enable": true,
+                "minimumValue": 0.35
             },
-            "value": 0.5,
+            "value": 0.7,
             "animation": {
                 "count": 0,
-                "enable": false,
-                "speed": 1,
+                "enable": true,
+                "speed": 0.2,
                 "sync": false,
                 "destroy": "none",
-                "minimumValue": 0.1,
+                "minimumValue": 0.3,
                 "startValue": "random"
             }
         },
@@ -349,12 +349,12 @@ const particlesConfig =
         "rotate": {
             "random": {
                 "enable": false,
-                "minimumValue": 0
+                "minimumValue": 0.5,
             },
-            "value": 0,
+            "value": 2,
             "animation": {
-                "enable": false,
-                "speed": 0,
+                "enable": true,
+                "speed": 0.2,
                 "sync": false
             },
             "direction": "clockwise",
@@ -424,7 +424,7 @@ export default function NyanCatSection() {
 
     return (
         <div className={styles.nyan}>
-            <Particles id="tsparticles" options={particlesConfig} />
+            <Particles style={{maxHeight: "33vh", minHeight: "33vh"}} id="tsparticles" options={particlesConfig} />
         </div>
     )
 }
