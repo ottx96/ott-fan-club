@@ -32,6 +32,7 @@
 }
 
 .glass {
+    top: 20vh;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -65,6 +66,14 @@
     filter: invert(1);
 }
 
+.continue img {
+    position: absolute;
+    bottom: 5vh;
+    max-height: 10vh;
+    transform: rotate(90deg);
+    filter: invert(1);
+}
+
 @media screen and (max-width: 648px) {
     .glass {
         min-width: 90%;
@@ -75,6 +84,11 @@
     }
     .glass h2 {
         font-size: 2rem;
+    }
+    .buttons * {
+        font-size: 1.25rem;
+        color: var(--burnt-sienna);
+        color: white;
     }
 }
 
