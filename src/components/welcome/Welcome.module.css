@@ -1,25 +1,17 @@
-.welcome {
-    /* background-color: var(--charcoal); */
-    width: 100%;
-    min-height: 95vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.snap {
+    /* scroll-snap-type: mandatory; */
+    /* scroll-behavior: smooth; */
+    /* scroll-snap-align: end; */
+    min-height: 25vh;
+    max-height: 100vh;
+    min-width: 100%;
+    background-color: var(--sandy-brown);
 }
 
-.greeting {
-    text-align: center;
-    animation: textanimation 4s ease 0s infinite alternate;
-    color: var(--charcoal)
-}
-
-@keyframes textanimation {
-    from {
-        filter: opacity(1);
-    }
-    to {
-        color: var(--sandy-brown);
-    }
+.snap:nth-child(even) {
+    background-color: var(--persian-green);
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 @media screen and (max-width: 648px) {
