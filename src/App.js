@@ -14,7 +14,7 @@ import {
 function App() {
   return (
     <HashRouter>
-      <Navbar />
+      {/* <Navbar /> */}
       <Switch>
         <Route path="/quotes">
           <Quotes />
