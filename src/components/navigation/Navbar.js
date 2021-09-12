@@ -10,7 +10,6 @@ export default function NavigationBar() {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link eventKey={1} href="#/">🏠</Nav.Link>
                     <Nav.Link eventKey={2} href="#quotes">Zitate</Nav.Link>
                     <Nav.Link eventKey={3} href="#memes">Memes</Nav.Link>
                 </Nav>
