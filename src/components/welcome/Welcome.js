@@ -5,7 +5,8 @@ import LandingSection from './sections/landing/Landing'
 
 export default function Welcome() {
     return (
-        <div className={styles.container}>
+        <div className={styles.main}>
+            <div className={styles.container}>
             <LandingSection />
             <div className={styles.glass}>
                 <h1>Manuel Ott</h1>
@@ -17,6 +18,7 @@ export default function Welcome() {
                     <img src="https://image.flaticon.com/icons/png/512/48/48910.png" alt="" />
                 </div>
             </div>
+        </div>
             
             
             {/* <section className={styles.snap}/> */}

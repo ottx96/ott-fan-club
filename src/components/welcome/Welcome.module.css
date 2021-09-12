@@ -1,5 +1,11 @@
-:root {
+.main {
+    top:0;
+    position: absolute;
+    z-index: -20;
     background-color: black;
+    min-width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
 }
 
 * {
