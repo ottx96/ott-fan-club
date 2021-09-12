@@ -107,7 +107,7 @@ const particlesConfig =
 export default function LandingSection() {
     return (
         <div className={styles.landing}>
-            <Particles style={{minHeight: "100vh"}} id="tsparticles" options={particlesConfig} />
+            <Particles style={{minHeight: "99.5vh"}} id="tsparticles" options={particlesConfig} />
         </div>
     )
 }
