@@ -13,7 +13,7 @@ const particlesConfig =
         "image": "url('http://vincentgarreau.com/particles.js/assets/img/kbLd9vb_new.gif')",
         "position": "0 50%",
         "repeat": "no-repeat",
-        "size": "60%",
+        "size": "75%",
         "opacity": 1
     },
     "fullScreen": {
@@ -423,7 +423,7 @@ const particlesConfig =
 export default function NyanCatSection() {
     return (
         <div className={styles.nyan}>
-            <Particles style={{maxHeight: "45vh", minHeight: "45vh"}} id="tsparticles" options={particlesConfig} />
+            <Particles style={{maxHeight: "25vh", minHeight: "25vh"}} id="tsparticles" options={particlesConfig} />
         </div>
     )
 }
