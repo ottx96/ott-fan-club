@@ -70,7 +70,7 @@
     position: absolute;
     bottom: 5vh;
     max-height: 10vh;
-    transform: rotate(90deg);
+    transform: rotate(90deg) translateY(30%);
     filter: invert(1);
 }
 
