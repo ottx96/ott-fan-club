@@ -3,7 +3,7 @@
     /* scroll-behavior: smooth; */
     /* scroll-snap-align: end; */
     min-height: 25vh;
-    max-height: 50vh;
+    max-height: 100vh;
     min-width: 100%;
     background-color: var(--sandy-brown);
 }

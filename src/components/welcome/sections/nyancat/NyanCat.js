@@ -421,10 +421,9 @@ const particlesConfig =
 }
 
 export default function NyanCatSection() {
-
     return (
         <div className={styles.nyan}>
-            <Particles style={{maxHeight: "25vh", minHeight: "20vh"}} id="tsparticles" options={particlesConfig} />
+            <Particles style={{maxHeight: "45vh", minHeight: "45vh"}} id="tsparticles" options={particlesConfig} />
         </div>
     )
 }
