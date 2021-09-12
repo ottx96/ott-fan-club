@@ -58,14 +58,14 @@ const particlesConfig =
       },
       "modes": {
         "trail": {
-          "delay": 0.025,
-          "quantity": 3,
+          "delay": 0.015,
+          "quantity": 6,
           "particles": {
             "size": {
               "value": 50,
               "random": {
                 "enable": true,
-                "minimumValue": 15
+                "minimumValue": 10
               },
               "animation": {
                 "enable": true,
