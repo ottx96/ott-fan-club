@@ -1,3 +1,6 @@
+:root {
+    background-color: black;
+}
 .snap {
     /* scroll-snap-type: mandatory; */
     /* scroll-behavior: smooth; */
