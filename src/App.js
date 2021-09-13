@@ -10,17 +10,21 @@ import {
   Route,
   HashRouter
 } from "react-router-dom";
+import Skills from './components/skills/Skills';
 
 function App() {
   return (
     <HashRouter>
       {/* <Navbar /> */}
       <Switch>
-        <Route path="/quotes">
+        <Route exact={true} path="/quotes">
           <Quotes />
         </Route>
         <Route exact={true} path="/memes">
           <Memes />
+        </Route>
+        <Route exact={true} path="/skills">
+          <Skills />
         </Route>
         <Route path="/submit/quote">
           <QuoteSubmissionForm />

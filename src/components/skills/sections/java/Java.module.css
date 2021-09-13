@@ -1,0 +1,35 @@
+.java {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    min-height: 33vh;
+}
+
+.infos {
+    position: relative;
+    min-width: unset;
+    max-width: 66%;
+    left: 3%;
+    text-align: start;
+    padding: 1%;
+}
+
+.icon {
+    position: relative;
+    max-height: 33vh;
+    margin: 1%;
+}
+
+@media screen and (max-width: 648px) {
+    .icon {
+        max-height: 20vh;
+    }
+}
+
+@media screen and (min-width: 648px) {
+    .icon {
+        max-height: 33vh;
+    }
+}
