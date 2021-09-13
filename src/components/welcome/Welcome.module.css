@@ -69,6 +69,7 @@
 .continue img {
     position: absolute;
     bottom: 5vh;
+    left: 50%;
     max-height: 10vh;
     transform: rotate(90deg) translateY(30%);
     filter: invert(1);

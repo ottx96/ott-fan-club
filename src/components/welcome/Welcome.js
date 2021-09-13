@@ -22,7 +22,7 @@ export default function Welcome() {
 
                 {/* Free, absolute positioning */}
                 <div className={styles.continue}>
-                    <a href="#quotes"><img src={arrow} alt="" /></a>
+                    <a href="#skills"><img src={arrow} alt="" /></a>
                 </div>
             </div>
         </div>

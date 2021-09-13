@@ -1,0 +1,27 @@
+.sections section:nth-child(even){
+    background-color: rgba(0,0,0,1);
+}
+.sections section:nth-child(odd){
+    background-color: rgba(0,0,0,.95);
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.sections section,div {
+    min-width: 100%;
+}
+
+.sections * {
+    color: rgba(255,255,255,.7)
+}
+
+.header * {
+    background-color: black;
+    color: white;
+    font-size: 4rem;
+    padding: 20px;
+}
